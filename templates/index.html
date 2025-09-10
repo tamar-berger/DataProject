@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ColumbusPath</title>
+
+    <!-- Radley font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+
+    <!-- HERO -->
+    <section class="video-hero" aria-label="Intro, Landing">
+      <video class="video-hero__bg"
+             autoplay
+             muted
+             playsinline
+             loop
+             poster="{{ url_for('static', filename='media/hero.jpg') }}">
+        <source src="{{ url_for('static', filename='media/hero.webm') }}" type="video/webm">
+        <source src="{{ url_for('static', filename='media/hero.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="video-hero__overlay" aria-hidden="true"></div>
+
+      <div class="video-hero__content container">
+        <div class="video-hero__inner">
+          <div class="video-hero__text">
+            <h1 class="video-hero__title">
+              A New Adventure <br> Awaits You.
+            </h1>
+            <p class="video-hero__lead">
+              Rate places you have visited, choose what matters for this trip
+              and explore a new way of traveling.
+            </p>
+          </div>
+          <div class="video-hero__cta">
+            <a href="#rate" id="startBtn" class="btn pill sea">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: Rate visited places -->
+    <section id="rate" class="rate-section">
+      <div class="rate-container">
+        <h2 class="section-title">Let's Start By Getting To Know You</h2>
+        <p class="help">Add a country, then click the stars to rate your past experience (if you can't find it in the map search for it in the list).</p>
+
+        <!-- Map based rating -->
+        <div id="mapRate" class="map-rate">
+          <div id="mapWrapper" class="map-wrapper" aria-label="World map, click a country to rate">
+            <div id="mapMount" class="map-mount" aria-hidden="true"></div>
+            <div id="mapTooltip" class="map-tooltip" role="status" aria-live="polite"></div>
+          </div>
+
+          <!-- Floating rater -->
+          <div id="rater" class="rater" hidden>
+            <div class="rater-name" id="raterName"></div>
+            <div class="rater-stars" id="raterStars" aria-label="Rate 1 to 5 stars"></div>
+            <div class="rater-actions">
+              <button type="button" class="btn" id="raterCancel">Cancel</button>
+              <button type="button" class="btn primary" id="raterSave">Save</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Classic list control -->
+        <div class="add-row">
+          <label for="countrySelect" class="sr-only">Country</label>
+          <select id="countrySelect">
+            {% for c in countries %}
+              <option value="{{ c }}">{{ c }}</option>
+            {% endfor %}
+          </select>
+          <button id="addCountry" class="btn">Add</button>
+        </div>
+
+        <ul id="ratedList" class="rated-list" aria-live="polite"></ul>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Criteria sliders -->
+    <section id="criteria" class="full-section">
+      <div class="section-container">
+        <h2 class="section-title">Tell Us What Is Important For You</h2>
+        <p class="help">Slide toward the right to give a criterion more influence.</p>
+
+        <div class="criteria-grid">
+          <label class="slider">
+            <span>Budget friendliness</span>
+            <input type="range" min="0" max="100" value="50" data-key="budget">
+            <output>70</output>
+          </label>
+
+          <label class="slider">
+            <span>Safety level</span>
+            <input type="range" min="0" max="100" value="70" data-key="safety">
+            <output>60</output>
+          </label>
+
+          <label class="slider">
+            <span>English speaking level</span>
+            <input type="range" min="0" max="100" value="50" data-key="english">
+            <output>50</output>
+          </label>
+
+          <label class="slider">
+            <span>Public transport access</span>
+            <input type="range" min="0" max="100" value="50" data-key="transport">
+            <output>50</output>
+          </label>
+
+          <label class="slider">
+            <span>Health care quality</span>
+            <input type="range" min="0" max="100" value="50" data-key="health">
+            <output>40</output>
+          </label>
+
+          <label class="slider">
+            <span>Culture accessibility rate</span>
+            <input type="range" min="0" max="100" value="60" data-key="culture">
+            <output>40</output>
+          </label>
+
+          <label class="slider">
+            <span>Nature and scenery</span>
+            <input type="range" min="0" max="100" value="50" data-key="nature">
+            <output>40</output>
+          </label>
+
+          <label class="slider">
+            <span>Tourism crowd level</span>
+            <input type="range" min="0" max="100" value="50" data-key="tourism">
+            <output>40</output>
+          </label>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Full-bleed photo + call to action + result -->
+    <section
+      class="photo-section"
+      style="--bg-img: url('{{ url_for('static', filename='media/next-bg.jpg') }}'); --photo-shift: -6vh;"
+    >
+      <div class="photo-section__inner">
+        <h2 class="section-title">Get Ready To Explore</h2>
+
+        <div class="cta-wrap">
+          <button id="goBtn" class="btn pill sea">See My Recommendation</button>
+          <p id="status" class="status"></p>
+
+          <div id="result" class="result" hidden>
+            <h3 class="result-heading">Your next trip should be</h3>
+            <div id="countryBox" class="country-box" role="status" aria-live="polite"></div>
+            <div style="margin-top:12px">
+              <button id="againBtn" class="btn">Tweak and try again</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>All rights reserved to Adi Zuarerts, Itamar Epstein and Tamar Berger.</small>
+    </footer>
+
+    <script>
+      window.APP = { worldSvgUrl: "{{ url_for('static', filename='media/world.svg') }}" };
+    </script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
