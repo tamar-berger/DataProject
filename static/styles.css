@@ -233,3 +233,29 @@ input[type="range"]::-moz-range-progress { height: 10px; border-radius: 999px; b
 }
 .photo-section__inner .section-title { color: #f1f5f9; margin-bottom: 12px; }
 .photo-section__inner .help { color: #d8e6ea; }
+
+/*result*/
+
+.result { text-align: center; }
+
+.result .result-heading {
+  color: #c7f5f3;
+  margin-bottom: 10px;
+}
+
+.country-box{
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 14px auto 18px;
+  border-radius: 12px;
+  background: rgba(41,199,197,.16);
+  /*border: 1.5px solid rgba(41,199,197,.55);*/
+  color: #eaffff;
+  box-shadow: 0 8px 22px rgba(0,0,0,.28);
+  backdrop-filter: saturate(120%) blur(2px);
+  -webkit-backdrop-filter: saturate(120%) blur(2px);
+}
+
+@media (min-width: 700px){
+  .country-box { font-size: 26px; padding: 8px 14px; }
+}
