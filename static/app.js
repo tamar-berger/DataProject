@@ -17,6 +17,7 @@ if (heroVideo && heroVideo.play) {
 // ===== Ratings, sliders, API =====
 const rated = new Map();
 
+// Elements
 const selectEl = document.getElementById("countrySelect");
 const addBtn = document.getElementById("addCountry");
 const listEl = document.getElementById("ratedList");
@@ -26,16 +27,14 @@ const statusEl = document.getElementById("status");
 const resultWrap = document.getElementById("result");
 const countryBox = document.getElementById("countryBox");
 
-function colorCountry() {} // replaced after SVG loads
-
+// Small helper so every place that writes a rating does the same thing
 function setRating(name, value) {
   rated.set(name, value);
-  window.colorCountry(name, value);
+  colorCountry(name, value);
   renderRated();
 }
 
 function renderRated() {
-  if (!listEl) return;
   listEl.innerHTML = "";
   for (const [country, value] of rated.entries()) {
     const li = document.createElement("li");
@@ -65,7 +64,7 @@ function renderRated() {
     remove.textContent = "Remove";
     remove.addEventListener("click", () => {
       rated.delete(country);
-      window.colorCountry(country, 0);
+      colorCountry(country, 0);
       renderRated();
     });
 
@@ -79,15 +78,17 @@ addBtn?.addEventListener("click", () => {
   if (!rated.has(c)) setRating(c, 3);
 });
 
-// Sliders
+// Sliders show live values and fill percentage
 document.querySelectorAll('input[type="range"]').forEach(r => {
   const out = r.parentElement.querySelector("output");
+
   const setVar = () => {
     const min = Number(r.min) || 0;
     const max = Number(r.max) || 100;
     const pct = ((Number(r.value) - min) / (max - min)) * 100;
     r.style.setProperty("--val", pct + "%");
   };
+
   const sync = () => { out.textContent = r.value; setVar(); };
   r.addEventListener("input", sync);
   sync();
@@ -131,6 +132,7 @@ againBtn?.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+// Initial render
 renderRated();
 
 /* ========= Map rating integration ========= */
@@ -163,13 +165,13 @@ renderRated();
       const rater = document.getElementById("rater");
       const raterName = document.getElementById("raterName");
       const raterStars = document.getElementById("raterStars");
-      const raterCancel = document.getElementById("raterCancel");
-      const raterSave = document.getElementById("raterSave");
+      // const raterCancel = document.getElementById("raterCancel");
+      // const raterSave = document.getElementById("raterSave");
 
       let currentName = null;
       let currentValue = 3;
 
-      function buildStars(val = 3) {
+      function buildRaterStars(val = 3) {
         raterStars.innerHTML = "";
         for (let i = 1; i <= 5; i++) {
           const b = document.createElement("button");
@@ -177,9 +179,11 @@ renderRated();
           b.className = i <= val ? "active" : "";
           b.textContent = i <= val ? "⭐" : "☆";
           b.setAttribute("aria-label", `Rate ${i} star${i > 1 ? "s" : ""}`);
+          // Immediate save on click, keep the panel open for tweaks
           b.addEventListener("click", () => {
             currentValue = i;
-            buildStars(i);
+            buildRaterStars(i);
+            if (currentName) setRating(currentName, currentValue);
           });
           raterStars.appendChild(b);
         }
@@ -199,7 +203,7 @@ renderRated();
         const existing = rated.has(name) ? rated.get(name) : 3;
         currentValue = existing;
         raterName.textContent = name;
-        buildStars(existing);
+        buildRaterStars(existing);
         const vw = window.innerWidth, vh = window.innerHeight;
         const x = Math.min((e.clientX ?? vw / 2) + 12, vw - 240);
         const y = Math.min((e.clientY ?? vh / 2) + 12, vh - 180);
@@ -250,13 +254,18 @@ renderRated();
         if (!rater.hidden && !rater.contains(e.target) && !svg.contains(e.target)) rater.hidden = true;
       });
 
+      // Expose coloring after SVG exists
       window.colorCountry = function(name, value) {
         const node = svg.querySelector(`path[data-name="${CSS.escape(name)}"]`);
         if (!node) return;
         if (value > 0) node.classList.add("is-rated"); else node.classList.remove("is-rated");
       };
 
+      // Recolor already-rated countries (e.g., added from the select)
       rated.forEach((v, k) => window.colorCountry(k, v));
     })
     .catch(e => console.warn("Could not load world.svg", e));
 })();
+
+// Fallback noop if SVG not ready
+function colorCountry(){ /* replaced after SVG loads */ }
