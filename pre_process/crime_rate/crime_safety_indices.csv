@@ -1,17 +1,17 @@
-Country,Crime Index,Safety Index
+country,crime_index,safety_index
 Haiti,81.0,19.0
-PapuaNewGuinea,80.7,19.3
+Papua New Guinea,80.7,19.3
 Venezuela,80.5,19.5
 Afghanistan,75.2,24.8
-SouthAfrica,74.6,25.4
+South Africa,74.6,25.4
 Honduras,71.9,28.1
-TrinidadAndTobago,71.0,29.0
+Trinidad and Tobago,71.0,29.0
 Syria,68.4,31.6
 Jamaica,67.4,32.6
 Peru,66.7,33.3
 Guyana,66.4,33.6
 Angola,66.3,33.7
-DemocraticRepublicOfTheCongo,66.2,33.8
+Democratic Republic of the Congo,66.2,33.8
 Nigeria,66.1,33.9
 Cameroon,65.5,34.5
 Bolivia,64.6,35.4
@@ -22,25 +22,23 @@ Somalia,63.2,36.8
 Yemen,63.0,37.0
 Ecuador,62.6,37.4
 Bangladesh,61.5,38.5
-PuertoRico,61.3,38.7
 Zimbabwe,61.2,38.8
 Mozambique,61.0,39.0
 Colombia,61.0,39.0
 Chile,60.5,39.5
-DominicanRepublic,60.4,39.6
+Dominican Republic,60.4,39.6
 Paraguay,60.1,39.9
-UsVirginIslands,59.2,40.8
 Guatemala,57.7,42.3
 Bahamas,56.9,43.1
 Fiji,56.9,43.1
-ElSalvador,56.7,43.3
+El Salvador,56.7,43.3
 Libya,56.4,43.6
 Kenya,55.8,44.2
-CoteDIvoire,55.7,44.3
+Côte d'Ivoire,55.7,44.3
 France,55.6,44.4
 Maldives,54.1,45.9
 Uganda,54.1,45.9
-CostaRica,53.7,46.3
+Costa Rica,53.7,46.3
 Tanzania,53.4,46.6
 Mexico,53.2,46.8
 Algeria,52.9,47.1
@@ -56,12 +54,12 @@ Ethiopia,50.4,49.6
 Cambodia,50.2,49.8
 Belgium,49.5,50.5
 Mauritius,49.4,50.6
-UnitedStates,49.2,50.8
+United States,49.2,50.8
 Belarus,49.1,50.9
 Ireland,48.6,51.4
 Malaysia,48.6,51.4
-NewZealand,48.5,51.5
-UnitedKingdom,48.4,51.6
+New Zealand,48.5,51.5
+United Kingdom,48.4,51.6
 Sweden,48.1,51.9
 Morocco,47.5,52.5
 Australia,47.4,52.6
@@ -82,15 +80,15 @@ Moldova,44.7,55.3
 India,44.2,55.8
 Albania,44.2,55.8
 Philippines,43.4,56.6
-StateOfPalestine,43.2,56.8
+State of Palestine,43.2,56.8
 Malta,43.0,57.0
 Panama,42.7,57.3
 Pakistan,42.4,57.6
-SriLanka,42.3,57.7
+Sri Lanka,42.3,57.7
 Iraq,41.9,58.1
-Turkiye,41.4,58.6
-NorthMacedonia,41.4,58.6
-BosniaAndHerzegovina,41.2,58.8
+Turkey,41.4,58.6
+North Macedonia,41.4,58.6
+Bosnia and Herzegovina,41.2,58.8
 Kosovo,41.1,58.9
 Vietnam,40.4,59.6
 Jordan,39.8,60.2
@@ -115,11 +113,10 @@ Portugal,32.4,67.6
 Azerbaijan,31.8,68.2
 Israel,31.7,68.3
 Slovakia,31.0,69.0
-CaymanIslands,30.6,69.4
 Brunei,29.4,70.6
 Poland,28.7,71.3
-Austria,28.3,71.7
-SouthKorea,26.9,73.1
+Australia,28.3,71.7
+South Korea,26.9,73.1
 Switzerland,26.7,73.3
 Uzbekistan,26.6,73.4
 Czechia,26.6,73.4
@@ -128,22 +125,19 @@ Rwanda,26.4,73.6
 Denmark,26.0,74.0
 Georgia,26.0,74.0
 Netherlands,25.8,74.2
-Iceland,25.8,74.2
+Ireland,25.8,74.2
 Croatia,25.4,74.6
 Monaco,24.7,75.3
 Slovenia,24.4,75.6
 Bahrain,23.8,76.2
-SaudiArabia,23.7,76.3
+Saudi Arabia,23.7,76.3
 China,23.5,76.5
 Estonia,23.5,76.5
 Japan,22.7,77.3
 Singapore,22.6,77.4
 Armenia,22.4,77.6
-HongKong,21.5,78.5
-IsleOfMan,20.9,79.1
 Oman,18.6,81.4
-Macao,18.2,81.8
 Taiwan,17.0,83.0
 Qatar,15.4,84.6
 Andorra,15.2,84.8
-UnitedArabEmirates,14.8,85.2
+United Arab Emirates,14.8,85.2

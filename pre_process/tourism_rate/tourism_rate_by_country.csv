@@ -1,59 +1,59 @@
-Country,Value
+country,tourism_arrivals
 Tuvalu,3600
-SolomonIslands,4400
-MarshallIslands,6100
+Solomon Islands,4400
+Marshall Islands,6100
 Comoros,7000
 Chad,10400
 Kiribati,12000
-FederatedStatesOfMicronesia,18000
+Federated States of Micronesia,18000
 Palau,18400
 Samoa,23900
 Moldova,29200
 Bhutan,29800
 Mauritania,30000
-PapuaNewGuinea,39000
-GuineaBissau,52400
+Papua New Guinea,39000
+Guinea-Bissau,52400
 Liechtenstein,58400
 Djibouti,63000
 Mongolia,66900
-BurkinaFaso,67000
-SierraLeone,71000
-TimorLeste,74800
+Burkina Faso,67000
+Sierra Leone,71000
+Timor-Leste,74800
 Vanuatu,82400
-Niger,85000
+Nigeria,85000
 Guyana,86000
-CentralAfricanRepublic,87000
+Central African Republic,87000
 Madagascar,87100
-StateOfPalestine,93000
+State of Palestine,93000
 Tonga,94000
 Guinea,99000
-NorthMacedonia,118000
+North Macedonia,118000
 Seychelles,124500
 Dominica,140000
 Eritrea,142000
-RepublicOfTheCongo,158000
+Republic of the Congo,158000
 Monaco,159000
 Fiji,168000
-CaboVerde,180000
+Cabo Verde,180000
 Namibia,187100
-BosniaAndHerzegovina,197000
+Bosnia and Herzegovina,197000
 Grenada,217000
-Mali,217000
+Malawi,217000
 Angola,218000
 Nepal,230000
 Suriname,279000
 Burundi,299000
-SaintKittsAndNevis,301400
+Saint Kitts and Nevis,301400
 Mauritius,316000
 Bangladesh,323000
 Bolivia,323300
 Benin,337000
 Eswatini,345300
 Montenegro,351000
-DemocraticRepublicOfTheCongo,351000
+Democratic Republic of the Congo,351000
 Armenia,375000
 Turkmenistan,380000
-SaintVincentAndTheGrenadines,392000
+Saint Vincent and the Grenadines,392000
 Yemen,398000
 SaintLucia,432500
 Serbia,446000
@@ -61,21 +61,21 @@ Uganda,473000
 Nicaragua,474000
 Togo,482000
 Belize,487000
-Iceland,488000
+Ireland,488000
 Zambia,502000
 Ethiopia,518000
 Luxembourg,525000
 Gabon,526000
-SriLanka,540000
+Sri Lanka,540000
 Maldives,555000
 Qatar,582000
 Algeria,591000
 Guatemala,594000
 Zimbabwe,639000
 Panama,647000
-CoteDIvoire,668000
+Côte d'Ivoire,668000
 Honduras,669000
-ElSalvador,707000
+El Salvador,707000
 Malta,718000
 Libya,760000
 Azerbaijan,796000
@@ -90,7 +90,7 @@ Myanmar,903000
 Haiti,938000
 Barbados,966000
 Pakistan,966000
-NewZealand,996000
+New Zealand,996000
 Cameroon,1021000
 Tajikistan,1035000
 Brunei,1071000
@@ -98,7 +98,7 @@ Paraguay,1077000
 Cuba,1086000
 Peru,1119000
 Lesotho,1142000
-CostaRica,1146500
+Costa Rica,1146500
 Slovenia,1216000
 Jordan,1240000
 Cambodia,1306000
@@ -127,11 +127,11 @@ Ecuador,2108000
 Kuwait,2161000
 Lithuania,2284000
 Syria,2424000
-SouthKorea,2519000
+South Korea,2519000
 Belgium,2584000
 Albania,2658000
 Singapore,2742000
-DominicanRepublic,2748000
+Dominican Republic,2748000
 Morocco,2802000
 Latvia,3204000
 Ukraine,3382000
@@ -139,7 +139,7 @@ Uruguay,3480000
 China,3569000
 Belarus,3598000
 Vietnam,3837000
-SouthAfrica,3886600
+South Africa,3886600
 Indonesia,4053000
 Japan,4115800
 Cyprus,4117000
@@ -151,34 +151,32 @@ Romania,5023000
 Andorra,5207000
 Nigeria,5265000
 Chile,5431000
-China,5897000
 Brazil,6353000
 Uzbekistan,6749000
 Netherlands,7265000
 Argentina,7399000
 Greece,7406000
-UnitedArabEmirates,8084000
+United Arab Emirates,8084000
 Kyrgyzstan,8508000
 Ireland,10951000
-UnitedKingdom,11101000
+United Kingdom,11101000
 Switzerland,11818000
 Germany,12449000
 Egypt,13026000
-Austria,15091000
+Australia,15091000
 Slovakia,15299000
 Denmark,15595000
-Turkiye,15971000
+Turkey,15971000
 India,17914000
-SaudiArabia,20292000
+Saudi Arabia,20292000
 Croatia,21608000
-China,30402000
 Hungary,31641000
 Canada,32430000
 Spain,36410000
 Czechia,37202000
 Italy,38419000
 Thailand,39916000
-UnitedStates,45037000
+United States,45037000
 Mexico,51128000
 Poland,88515000
 France,117109000

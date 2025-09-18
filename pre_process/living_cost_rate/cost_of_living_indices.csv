@@ -1,112 +1,102 @@
-country,Country,Cost of Living Index
-CaymanIslands,Cayman Islands,108.2
+country,Country.1,cost_of_living_index
 Switzerland,Switzerland,106.8
-Iceland,Iceland,94.5
+Ireland,Iceland,94.5
 Bahamas,Bahamas,85.4
 Singapore,Singapore,85.3
 Norway,Norway,78.9
 Denmark,Denmark,74.1
 Luxembourg,Luxembourg,73.5
-HongKongChina,Hong Kong (China),72.2
-Guernsey,Guernsey,70.2
 Israel,Israel,69.6
-IsleOfMan,Isle Of Man,68.6
 Netherlands,Netherlands,68.1
-Austria,Austria,67.6
+Australia,Austria,67.6
 Ireland,Ireland,66.6
-PapuaNewGuinea,Papua New Guinea,65.6
-UnitedStates,United States,64.8
+Papua New Guinea,Papua New Guinea,65.6
+United States,United States,64.8
 Germany,Germany,64.7
 Finland,Finland,64.5
 France,France,64.4
-UnitedKingdom,United Kingdom,64.2
+United Kingdom,United Kingdom,64.2
 Belgium,Belgium,63.6
-Australia,Australia,63
+Australia,Australia,63.0
 Sweden,Sweden,62.8
-SouthKorea,South Korea,62.4
+South Korea,South Korea,62.4
 Canada,Canada,60.7
-PuertoRico,Puerto Rico,59.8
-NewZealand,New Zealand,59.3
+New Zealand,New Zealand,59.3
 Italy,Italy,57.2
-MacaoChina,Macao (China),56
 Estonia,Estonia,55.9
 Cyprus,Cyprus,55.2
-UnitedArabEmirates,United Arab Emirates,53.4
+United Arab Emirates,United Arab Emirates,53.4
 Malta,Malta,53.1
 Uruguay,Uruguay,51.3
-Greece,Greece,51
+Greece,Greece,51.0
 Slovenia,Slovenia,50.6
-CostaRica,Costa Rica,50.3
+Costa Rica,Costa Rica,50.3
 Yemen,Yemen,50.1
 Jamaica,Jamaica,50.1
-TrinidadAndTobago,Trinidad And Tobago,49.4
+Trinidad and Tobago,Trinidad And Tobago,49.4
 Taiwan,Taiwan,49.4
-Latvia,Latvia,49
+Latvia,Latvia,49.0
 Japan,Japan,48.9
 Croatia,Croatia,48.6
 Spain,Spain,48.6
 Lithuania,Lithuania,48.3
-CzechRepublic,Czech Republic,48.2
 Guyana,Guyana,46.9
 Qatar,Qatar,46.9
 Slovakia,Slovakia,46.7
-DemocraticRepublicOfTheCongo,Democratic Republic of the Congo,46.5
+Democratic Republic of the Congo,Democratic Republic of the Congo,46.5
 Bahrain,Bahrain,46.1
 Brunei,Brunei,46.1
-Maldives,Maldives,46
+Maldives,Maldives,46.0
 Portugal,Portugal,45.8
-Senegal,Senegal,45
+Senegal,Senegal,45.0
 Albania,Albania,43.7
 Poland,Poland,43.7
 Panama,Panama,43.3
-Palestine,Palestine,43
-IvoryCoast,Ivory Coast,42.7
 Belize,Belize,42.3
 Hungary,Hungary,42.3
 Botswana,Botswana,41.7
 Ethiopia,Ethiopia,41.6
-SaudiArabia,Saudi Arabia,41.5
+Saudi Arabia,Saudi Arabia,41.5
 Serbia,Serbia,40.9
 Lebanon,Lebanon,40.5
 Armenia,Armenia,40.5
 Kuwait,Kuwait,40.4
 Cuba,Cuba,40.1
-Montenegro,Montenegro,40
+Montenegro,Montenegro,40.0
 Cameroon,Cameroon,39.6
 Bulgaria,Bulgaria,39.3
 Oman,Oman,39.3
 Argentina,Argentina,38.3
 Romania,Romania,38.3
-Turkey,Turkey,38.2
 Guatemala,Guatemala,37.9
-ElSalvador,El Salvador,37.6
+El Salvador,El Salvador,37.6
 Mexico,Mexico,37.6
-Mauritius,Mauritius,37
+Mauritius,Mauritius,37.0
 Jordan,Jordan,36.7
 Russia,Russia,36.1
 Chile,Chile,35.8
 Mozambique,Mozambique,35.7
-BosniaAndHerzegovina,Bosnia And Herzegovina,35.7
+Bosnia and Herzegovina,Bosnia And Herzegovina,35.7
 Venezuela,Venezuela,35.6
 Thailand,Thailand,35.3
-DominicanRepublic,Dominican Republic,34.7
+Dominican Republic,Dominican Republic,34.7
 Honduras,Honduras,34.1
-NorthMacedonia,North Macedonia,33.6
+North Macedonia,North Macedonia,33.6
 Zambia,Zambia,33.5
 Moldova,Moldova,33.5
 Zimbabwe,Zimbabwe,33.4
 Fiji,Fiji,33.3
-Cambodia,Cambodia,33
-SriLanka,Sri Lanka,32.5
+Cambodia,Cambodia,33.0
+Sri Lanka,Sri Lanka,32.5
 Nicaragua,Nicaragua,32.5
-SouthAfrica,South Africa,32
+South Africa,South Africa,32.0
 Namibia,Namibia,31.3
 Georgia,Georgia,31.2
 Ghana,Ghana,31.1
 Malaysia,Malaysia,31.1
 Mongolia,Mongolia,30.1
-Morocco,Morocco,30
-Peru,Peru,30
+Morocco,Morocco,30.0
+Peru,Peru,30.0
 Rwanda,Rwanda,29.7
 Philippines,Philippines,29.5
 China,China,29.4
@@ -114,9 +104,8 @@ Azerbaijan,Azerbaijan,29.3
 Ecuador,Ecuador,29.3
 Brazil,Brazil,28.6
 Kenya,Kenya,28.5
-Colombia,Colombia,28
+Colombia,Colombia,28.0
 Tunisia,Tunisia,27.5
-KosovoDisputedTerritory,Kosovo (Disputed Territory),27.5
 Iraq,Iraq,27.1
 Algeria,Algeria,26.8
 Kazakhstan,Kazakhstan,26.6
@@ -139,6 +128,6 @@ Madagascar,Madagascar,22.2
 Bangladesh,Bangladesh,21.2
 Egypt,Egypt,19.6
 Afghanistan,Afghanistan,19.1
-India,India,19
+India,India,19.0
 Pakistan,Pakistan,17.7
 Libya,Libya,17.2

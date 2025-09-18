@@ -1,10 +1,10 @@
-country,Health_Care_Index
+country,health_care_index
 Taiwan,86.5
-SouthKorea,82.8
+South Korea,82.8
 Japan,80.0
 Netherlands,79.3
 Denmark,78.4
-Austria,77.9
+Australia,77.9
 France,77.7
 Finland,77.5
 Thailand,77.5
@@ -15,45 +15,44 @@ Norway,75.6
 Czechia,75.5
 Estonia,75.5
 Luxembourg,75.2
-Lithuania,75
+Lithuania,75.0
 Qatar,73.4
 Australia,73.4
 Israel,73.2
-UnitedKingdom,72.7
+United Kingdom,72.7
 Mexico,72.5
 Portugal,72.2
 Germany,71.9
 Singapore,71.8
 Switzerland,71.5
-SriLanka,71.4
-Turkiye,71.2
-UnitedArabEmirates,70.6
+Sri Lanka,71.4
+Turkey,71.2
+United Arab Emirates,70.6
 Malaysia,70.3
 Canada,68.7
 China,68.7
 Uruguay,68.6
 Colombia,68.6
-NewZealand,68.4
+New Zealand,68.4
 Sweden,68.3
 Argentina,68.0
-UnitedStates,67.8
-Iceland,67.6
+United States,67.8
+Ireland,67.6
 Guatemala,67.3
 Philippines,67.3
-China,66.1
 Slovenia,66.1
 India,65.5
 Jordan,65.2
 Oman,65.1
 Italy,65.1
 Croatia,64.7
-CostaRica,64.3
-SouthAfrica,63.8
+Costa Rica,64.3
+South Africa,63.8
 Lebanon,63.7
 Chile,63.5
 Latvia,62.4
 Kenya,62.0
-SaudiArabia,61.8
+Saudi Arabia,61.8
 Russia,61.5
 Vietnam,61.3
 Indonesia,60.9
@@ -65,9 +64,9 @@ Armenia,59.0
 Greece,58.5
 Slovakia,58.4
 Kuwait,58.4
-DominicanRepublic,58.3
+Dominican Republic,58.3
 Bulgaria,58.1
-Poland,58
+Poland,58.0
 Nepal,57.7
 Ghana,57.4
 Tunisia,57.2
@@ -76,10 +75,10 @@ Romania,56.5
 Peru,56.3
 Ukraine,55.9
 Georgia,55.6
-BosniaAndHerzegovina,55.6
-NorthMacedonia,55.1
+Bosnia and Herzegovina,55.6
+North Macedonia,55.1
 Algeria,54.5
-TrinidadAndTobago,54.3
+Trinidad and Tobago,54.3
 Hungary,54.3
 Iran,52.8
 Malta,52.5
