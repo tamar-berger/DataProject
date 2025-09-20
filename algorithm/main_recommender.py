@@ -217,6 +217,13 @@ class SmartCountryRecommender:
             user_confidence=user_profile.confidence
         )
         
+        # Step 3.5: Exclude countries that user has already rated
+        if user_preferences.country_ratings:
+            rated_countries = set(user_preferences.country_ratings.keys())
+            scores = {country: score for country, score in scores.items() 
+                     if country not in rated_countries}
+            logger.info(f"Excluded {len(rated_countries)} rated countries from recommendations: {rated_countries}")
+        
         # Step 4: Apply constraint filtering (if enabled)
         if self.ablation_config['use_constraints']:
             filtered_df, constraint_info = self.constraint_filter.apply_constraints(
