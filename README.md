@@ -9,11 +9,16 @@ The Frontend collects the inputs while the backend runs a smart pipeline over a 
 
 ---
 
-## Features
-- Rate countries you’ve visited (On a scale from 1 to 5) and set what matters for the coming trip: **budget, safety, English level, transport, health, culture, nature, tourism crowding**.
-- Hybrid scoring: content-based + neighborhood effects.
-- Constraint filtering (e.g., high safety) with intelligent relaxation so you always get a result.
-- Single “best next country” returned as plain text for easy UI use.
+## How to use the website?
+- Start by helping us get to know you. Choose countries that you have visited in the past and enjoyed. the more the merrier! 
+- Rate the countries you’ve visited (On a scale from 1 to 5)
+- Set what matters for you the most in the coming trip: **budget, safety, English level, transport, health, culture, nature, tourism crowding**. No need to rate all of them, only the most important ones.
+- Press "See My Recommendation" and go buy the tickets :)
+
+**Important Notes:**
+- Our algorithm is designed to be positive. It gives more weight to places you liked in the past but it doesn't reduce weight from places you didn't. We believe people change and you might discover the potential in the future. 
+- We use a hybrid scoring method that combines content-based and neighborhood-based recommendations.
+- There is constraint filtering (e.g., high safety) with intelligent relaxation so you always get a result.
 
 ---
 
