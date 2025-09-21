@@ -22,7 +22,7 @@ class SimilarityBasedScorer:
     
     def __init__(self, 
                  similarity_metric: str = 'cosine',
-                 rating_threshold: float = 0.6,  # Changed from 3.5 to 0.6 (equivalent to 3 stars normalized)
+                 rating_threshold: float = 0.6, 
                  feature_columns: Optional[List[str]] = None):
         """
         Initialize similarity scorer
