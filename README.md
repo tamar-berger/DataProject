@@ -2,7 +2,9 @@
 
 A lightweight web app that recommends a single country to visit based on your preferences and past ratings.  
 The Frontend collects the inputs while the backend runs a smart pipeline over a prepared dataset of 180+ countries stored in SQLite. 
+
 **Link to website**: https://dataproject-68ch.onrender.com/
+
 (It might take a few minutes for the servers to load after a long period of inactivity)
 
 ---
