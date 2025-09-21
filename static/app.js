@@ -75,7 +75,7 @@ function renderRated() {
 
 addBtn?.addEventListener("click", () => {
   const c = selectEl.value;
-  if (!rated.has(c)) setRating(c, 3);
+  if (!rated.has(c)) setRating(c, 0);
 });
 
 // Sliders show live values and fill percentage
@@ -200,7 +200,7 @@ renderRated();
 
       function openRater(e, name) {
         currentName = name;
-        const existing = rated.has(name) ? rated.get(name) : 3;
+        const existing = rated.has(name) ? rated.get(name) : 0;
         currentValue = existing;
         raterName.textContent = name;
         buildRaterStars(existing);
