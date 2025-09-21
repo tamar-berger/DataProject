@@ -79,6 +79,10 @@ addBtn?.addEventListener("click", () => {
   if (!rated.has(c)) setRating(c, 0);
 });
 
+const toggleAddState = () => { addBtn.disabled = !selectEl.value; };
+toggleAddState();                         // on load
+selectEl?.addEventListener("change", toggleAddState);
+
 // Sliders show live values and fill percentage
 document.querySelectorAll('input[type="range"]').forEach(r => {
   const out = r.parentElement.querySelector("output");
