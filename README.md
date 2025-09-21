@@ -7,7 +7,7 @@ Frontend collects inputs; backend runs a smart pipeline over a prepared dataset 
 
 ## Features
 - Rate countries you’ve visited (1–5 ⭐) and set what matters: **budget, safety, English level, transport, health, culture, nature, tourism crowding**.
-- Hybrid scoring: content-based + neighborhood effects + popularity.
+- Hybrid scoring: content-based + neighborhood effects.
 - Constraint filtering (e.g., high safety) with intelligent relaxation so you always get a result.
 - Single “best next country” returned as plain text for easy UI use.
 
@@ -46,32 +46,6 @@ final_project/
 ```
 
 ---
-
-## Quickstart (Local)
-
-1) **Python & venv**
-```bash
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scriptsctivate
-pip install -r requirements.txt
-```
-
-2) **Run**
-```bash
-# Option A: dev
-python app.py
-
-# Option B: prod-like
-gunicorn -b 0.0.0.0:8000 app:app
-```
-
-3) Open: `http://localhost:5001` (dev) or `http://localhost:8000` (gunicorn).
-
-> The app reads the DB path from `algorithm/config.py` (`DATABASE_PATH`).  
-> The bundled DB is `final_project/country_rates.db`.
-
----
-
 ## API
 
 **POST** `/api/recommend`  
@@ -105,33 +79,3 @@ Portugal
   English proficiency (EF EPI), Cultural accessibility, Public transport,  
   International tourism arrivals, Natural & environmental spaces.  
 See `pre_process/**/readme.md` for details.
-
----
-
-## Deploy on Render (Web Service)
-
-1) **Connect repo** → Create *Web Service*.  
-2) **Build command:** `pip install -r requirements.txt`  
-3) **Start command:** taken from `Procfile`  
-   ```
-   web: gunicorn -b 0.0.0.0:$PORT app:app
-   ```
-4) **Persistence options:**
-   - For demo/POC you can ship `country_rates.db` in the repo (works but **not persistent** across rebuilds if you modify it at runtime).
-   - For production: prefer **Render PostgreSQL** or attach a **Persistent Disk** and point `DATABASE_PATH` to that mount.
-
-> **Do not add** `sqlite3` to `requirements.txt`. It is built-in with Python.
-
----
-
-## Troubleshooting
-- **Build fails: “No matching distribution for sqlite3”**  
-  Remove `sqlite3` (and `typing`) from `requirements.txt`.
-- **DB not found**: verify `algorithm/config.py::DATABASE_PATH` points to the shipped `country_rates.db` or to your mounted path.
-- **Gunicorn + SQLite locks**: for real traffic use PostgreSQL; SQLite is OK for POC/single worker.
-
----
-
-## License / Credits
-Internal academic project (“ColumbusPath”) for travel recommendations using curated public datasets.  
-© The authors. All rights reserved (adjust as needed).
