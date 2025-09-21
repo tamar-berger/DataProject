@@ -75,6 +75,7 @@ function renderRated() {
 
 addBtn?.addEventListener("click", () => {
   const c = selectEl.value;
+  if (!c) return;
   if (!rated.has(c)) setRating(c, 0);
 });
 
