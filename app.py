@@ -3,7 +3,7 @@ import sqlite3
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), 'algorithm'))
-from main_recommender import SmartCountryRecommender
+from algorithm.main_recommender import SmartCountryRecommender
 
 app = Flask(__name__)
 
