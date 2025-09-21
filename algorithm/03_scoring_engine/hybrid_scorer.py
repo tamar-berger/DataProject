@@ -27,8 +27,8 @@ class HybridScorer:
     """
     
     def __init__(self, 
-                 content_weight: float = 0.5,
-                 similarity_weight: float = 0.5,
+                 content_weight: float = 0.3,
+                 similarity_weight: float = 0.7,
                  min_ratings_for_similarity: int = 3,
                  confidence_threshold: float = 0.3):
         """
