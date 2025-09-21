@@ -169,9 +169,9 @@ renderRated();
       // const raterSave = document.getElementById("raterSave");
 
       let currentName = null;
-      let currentValue = 3;
+      let currentValue = 0;
 
-      function buildRaterStars(val = 3) {
+      function buildRaterStars(val = 0) {
         raterStars.innerHTML = "";
         for (let i = 1; i <= 5; i++) {
           const b = document.createElement("button");
