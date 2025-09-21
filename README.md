@@ -1,12 +1,14 @@
 # ColumbusPath — Country Recommendation App
 
-A lightweight web app that recommends **one country** to visit based on your preferences and past ratings.  
-Frontend collects inputs; backend runs a smart pipeline over a prepared dataset of 180+ countries stored in **SQLite**.
+A lightweight web app that recommends a single country to visit based on your preferences and past ratings.  
+The Frontend collects the inputs while the backend runs a smart pipeline over a prepared dataset of 180+ countries stored in SQLite. 
+**Link to website**: https://dataproject-68ch.onrender.com/
+(It might take a few minutes for the servers to load after a long period of inactivity)
 
 ---
 
 ## Features
-- Rate countries you’ve visited (1–5 ⭐) and set what matters: **budget, safety, English level, transport, health, culture, nature, tourism crowding**.
+- Rate countries you’ve visited (On a scale from 1 to 5) and set what matters for the coming trip: **budget, safety, English level, transport, health, culture, nature, tourism crowding**.
 - Hybrid scoring: content-based + neighborhood effects.
 - Constraint filtering (e.g., high safety) with intelligent relaxation so you always get a result.
 - Single “best next country” returned as plain text for easy UI use.
@@ -69,13 +71,13 @@ Portugal
 ```
 
 **Errors**
-- `404 {"error":"No recommendations found"}`
-- `400 {"error":"<message>"}`
+- `404 {"error":"No recommendations found"}` // Where nothing close enough was found
+- `400 {"error":"<message>"}` // Any other unexpected error
 
 ---
 
 ## Data Sources (preprocessed)
-- Safety/Crime (Numbeo indices), Health-care quality, Cost of living,  
-  English proficiency (EF EPI), Cultural accessibility, Public transport,  
+- Safety, Health-care quality, Cost of living,  
+  English proficiency, Cultural accessibility, Public transport,  
   International tourism arrivals, Natural & environmental spaces.  
 See `pre_process/**/readme.md` for details.
