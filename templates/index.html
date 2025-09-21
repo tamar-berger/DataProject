@@ -70,11 +70,12 @@
             </div>
           </div>
         </div>
-
+        
         <!-- Classic list control -->
         <div class="add-row">
           <label for="countrySelect" class="sr-only">Country</label>
-          <select id="countrySelect">
+          <select id="countrySelect" required>
+            <option value="" disabled selected hidden>Choose Countries</option>
             {% for c in countries %}
               <option value="{{ c }}">{{ c }}</option>
             {% endfor %}
